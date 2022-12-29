@@ -1,2 +1,7 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>Welcome to this.me</h1>
+
+<ul>
+	<li>Name 1, Bio 1, http://eddiehub.org</li>
+	<li>Name 2, Bio 2, http://eddiehub.org</li>
+	<li>Name 3, Bio 3, http://eddiehub.org</li>
+</ul>
