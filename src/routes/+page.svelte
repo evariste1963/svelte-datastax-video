@@ -1,18 +1,17 @@
 <script>
 	export let data;
-
-	console.log('page data', data);
+	console.log(data);
+	const { body } = data;
 </script>
 
 <h1>Welcome to this.me</h1>
 
 <ul>
-	<!-- {#each data as { body }}
-		<p>bod</p>
+	{#each body as { name, bio, avartar, url }}
 		<li>
-			<p>bod.name</p>
-			<p>bio</p>
-			<p>url</p>
+			<p>name: {name}</p>
+			<p>bio: {bio}</p>
+			<p>webpage: {url}</p>
 		</li>
-	{/each} -->
+	{/each}
 </ul>

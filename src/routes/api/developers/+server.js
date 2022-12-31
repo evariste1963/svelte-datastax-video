@@ -9,8 +9,8 @@ export const GET = ({ request }) => {
 	return new Response(
 		JSON.stringify({
 			body: [
-				{ id: 1, name: 'evariste galois', bio: 'founder of this.me', url: '/' },
-				{ id: 2, name: 'Reuben', bio: 'developer at this.me', url: '/' }
+				{ id: 1, name: 'evariste galois', bio: 'founder of this.me', url: 'http://this.me.org' },
+				{ id: 2, name: 'Reuben', bio: 'developer at this.me', url: 'http://this.me.org' }
 			]
 		}),
 		{ status: 200 }

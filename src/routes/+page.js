@@ -4,8 +4,6 @@ export async function load({ fetch }) {
 		const data = await res.json();
 
 		console.log('js data  ', data);
-		return {
-			data
-		};
+		return data;
 	}
 }
