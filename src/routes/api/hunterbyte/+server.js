@@ -1,3 +1,5 @@
+//from youtube video: https://www.youtube.com/watch?v=qlmDj7q2x0c
+
 import { SECRET_API_KEY } from '$env/static/private';
 
 export const GET = async ({ request, url }) => {
