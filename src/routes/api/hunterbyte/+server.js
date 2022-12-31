@@ -1,11 +1,11 @@
 import { SECRET_API_KEY } from '$env/static/private';
 
 export const GET = async ({ request, url }) => {
-	const authHeader = request.headers.get('Authorisation');
+	// const authHeader = request.headers.get('Authorisation');
 
-	if (authHeader !== 'Myauthheader') {
-		return new Response(JSON.stringify({ message: 'invalid credentials' }), { status: 401 });
-	}
+	// if (authHeader !== 'Myauthheader') {
+	// 	return new Response(JSON.stringify({ message: 'invalid credentials' }), { status: 401 });
+	// }
 	const limit = Number(url.searchParams.get('limit') ?? '10');
 	const skip = Number(url.searchParams.get('skip') ?? '0');
 	const res = await fetch(`https://dummyjson.com/posts?limit=${limit}&skip=${skip}`);
